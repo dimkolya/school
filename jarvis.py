@@ -156,7 +156,7 @@ async def on_message(message):
             await message.channel.send(embed=discord.Embed(color=col[ncol],title='Дата/Date :date:',description=week[(d+yk+mk)%7]+', '+str(d)+' '+month[m]+' '+str(y)+' г.'))
             nextcol()
         elif msg[:6]=='погода':
-            owm=OWM('e236a55b30672acfc9f7fd0f966ebb47')
+            owm=OWM('OWM_TOKEN')
             mgr=owm.weather_manager()
             city='Якутск'
             if len(msg)>6:
