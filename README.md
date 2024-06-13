@@ -1,2 +1,2 @@
-# school
-school projects
+# School
+школьный проект
